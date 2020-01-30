@@ -1,0 +1,11 @@
+.ID {
+    margin: 10px;
+    border: 2px black solid;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.info {
+    padding-left: 20px;
+}
