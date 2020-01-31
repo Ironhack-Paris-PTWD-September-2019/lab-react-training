@@ -5,6 +5,9 @@ class IdCard extends Component {
 
     render(){
 
+        let taille = this.props.height/100 + "m";
+        // let anniv = new Date(this.props.birth);
+        
         return (
             <div className="IdCard">
                 <div className="imgId">
@@ -14,8 +17,10 @@ class IdCard extends Component {
                     <h3 className="firstName">First name: <span>{this.props.firstName}</span></h3>
                     <h3 className="lastName">Last name: <span>{this.props.lastName}</span></h3>
                     <h3 className="gender">Gender: <span>{this.props.gender}</span></h3>
-                    <h3 className="height">Height: <span>{this.props.height}</span></h3>
-                    <h3 className="birth">Birth: <span>{this.props.birth}</span></h3>
+                    <h3 className="height">Height: <span>{taille}</span></h3>
+
+                    <label >Birth: </label>
+                    <input type="date" value={this.props.birth} default ></input>
                 </div> 
             </div>
         );

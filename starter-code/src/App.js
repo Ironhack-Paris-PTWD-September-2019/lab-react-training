@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './index.css';
 import IdCard from "./IdCard";
+import Greetings from "./Greetings";
+import Random from "./Random";
 
 class App extends Component {
   state = {
@@ -18,9 +20,19 @@ class App extends Component {
       lastName:'Delores',
       gender:'female',
       height: 172,
-      birth: "1992-07-14",
+      birth: "1988-05-11",
       picture:"https://randomuser.me/api/portraits/women/44.jpg"
-    }
+    },
+
+    randomA : {
+      min: 1,
+      max: 6
+    },
+
+    randomB : {
+      min: 1,
+      max: 100
+    } 
   }
  
   render() {
@@ -50,6 +62,12 @@ class App extends Component {
 
         <h1>Greetings</h1>
         {/* TODO: Use the Greetings component */}
+        <Greetings lang="de">Ludwig</Greetings>
+        <Greetings lang="fr">François</Greetings>
+
+        <h1>Random</h1>
+        <Random min={this.state.randomA.min} max={this.state.randomA.max} />
+        <Random min={this.state.randomB.min} max={this.state.randomB.max} />
       </div>
     );
   }

@@ -13,6 +13,15 @@ code {
     monospace;
 }
 
+/*
+#### ########      ######     ###    ########  ########  
+ ##  ##     ##    ##    ##   ## ##   ##     ## ##     ## 
+ ##  ##     ##    ##        ##   ##  ##     ## ##     ## 
+ ##  ##     ##    ##       ##     ## ########  ##     ## 
+ ##  ##     ##    ##       ######### ##   ##   ##     ## 
+ ##  ##     ##    ##    ## ##     ## ##    ##  ##     ## 
+#### ########      ######  ##     ## ##     ## ########  
+*/
 
 .IdCard {
   display: flex;
@@ -40,4 +49,69 @@ code {
   margin: 0.3em 0.3em;
 }
 
+.infoId label {
+  font-weight: bolder;
+}
 
+.infoId input {
+  border: none;
+  font-size: 1em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+/*
+######   ########  ######## ######## ######## #### ##    ##  ######    ######  
+##    ##  ##     ## ##       ##          ##     ##  ###   ## ##    ##  ##    ## 
+##        ##     ## ##       ##          ##     ##  ####  ## ##        ##       
+##   #### ########  ######   ######      ##     ##  ## ## ## ##   ####  ######  
+##    ##  ##   ##   ##       ##          ##     ##  ##  #### ##    ##        ## 
+##    ##  ##    ##  ##       ##          ##     ##  ##   ### ##    ##  ##    ## 
+ ######   ##     ## ######## ########    ##    #### ##    ##  ######    ###### 
+*/
+
+.greetingBox h3 {
+  display: block;
+  font-size: 1em;
+  padding: 0.3em 0.3em;
+  margin: 0px;
+}
+
+.greetingBox {
+  border: 1px solid;
+  margin: 0.5em 0em;
+  
+}
+
+.message span {
+  font-weight : lighter;
+
+}
+
+
+/*
+########     ###    ##    ## ########   #######  ##     ## 
+##     ##   ## ##   ###   ## ##     ## ##     ## ###   ### 
+##     ##  ##   ##  ####  ## ##     ## ##     ## #### #### 
+########  ##     ## ## ## ## ##     ## ##     ## ## ### ## 
+##   ##   ######### ##  #### ##     ## ##     ## ##     ## 
+##    ##  ##     ## ##   ### ##     ## ##     ## ##     ## 
+##     ## ##     ## ##    ## ########   #######  ##     ## 
+*/
+
+.Random h3 {
+  display: block;
+  font-size: 1em;
+  padding: 0.3em 0.3em;
+  margin: 0px;
+}
+
+.Random {
+  border: 1px solid;
+  margin: 0.5em 0em;
+  
+}
+
+.randomBox span {
+  font-weight : lighter;
+
+}
