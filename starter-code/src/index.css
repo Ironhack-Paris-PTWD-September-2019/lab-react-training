@@ -159,7 +159,63 @@ code {
  ######  ##     ## ######## ########  ####    ##     ######  ##     ## ##     ## ########  
 */
 
+
+.creditCardBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0.5em 0em; 
+} 
+
+
+.CreditCard {
+  border-radius: 7px;
+  margin: 0em 0.5em;
+  padding: 0 0.5em;
+  width: 20%; 
+  
+}
+
 .logo img{
   display: block;
   margin-left: auto;
+  margin-right: 0.8em;
+  margin-top: 0.8em;
+  width: 4em;
+}
+
+.number {
+  text-align: center;
+  font-size: 1.8em;
+}
+
+.number span {
+  font-weight : lighter;
+}
+
+.dateBank {
+  display: flex;
+  
+}
+
+.dateBank h3{
+  /* padding-left: 0.5em; */
+  margin: 0em 0.5em;
+  font-size: 1em;
+  
+}
+
+.dateBank span {
+  font-weight : lighter;
+  
+}
+
+.owner {
+  margin: 0em 0.5em;
+  font-size: 1em;
+}
+
+.owner span {
+  font-weight : lighter;
+  
 }

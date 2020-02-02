@@ -12,24 +12,51 @@ class CreditCard extends Component {
         }
 
         let imgUrl = "";
+        let description = "";
         if (this.props.type === "Visa") {
-           imgUrl = "../public/img/visa.png";
+           imgUrl = "https://prediggo.com/wp-content/uploads/2019/07/VISA-logo.png";
+           description = "logo-visa";
         }
         if (this.props.type === "Master Card") {
-            imgUrl = "../public/img/master-card.svg";
+            imgUrl = "https://lh3.googleusercontent.com/proxy/K4ZcInC_x2iNcHzi9qdd4PySFJ2JfvzifhjVIo8xwz1f7SCL2_EKtkFnzvuXTU0Jm5KI_7hgGJAaSdxaX9QAyPJBtwN2qHD2t888mXweJC4XcNlroDfroYsF1eeiSD_br3xZ";
+            description = "logo-masterCard";
         }
+
+        let code1 = "";
+        let code2 ="";
+        let code3 = "";
+        let code4 = "";
+
+        for (let i=0 ; i <= this.props.number.length ; i++) {
+            if ( i>= 0 && i <4) {
+                code1 += this.props.number[i];
+            }
+            if ( i>= 4 && i <8) {
+                code2 += this.props.number[i]
+            }
+            if ( i>= 8 && i <12) {
+                code3 += this.props.number[i]
+            }
+            if ( i>= 12 && i <16) {
+                code4 += this.props.number[i]
+            }
+        }
+
+        let newCode = code1 + " " + code2 + " " + code3 + " " + code4;
+        let hiddenCode = "...." + " " + "...." + " " + "...." + " " + code4;
+
 
         return (
             <div className="CreditCard" style={creditCardStyle}>
                 <div className="logo">
-                    <img className="pictureCreditCard" src={imgUrl} alt="logo"></img>
+                    <img src={imgUrl} alt={description}/>
                 </div>
-                <h3>{this.props.number}</h3>
+                <h3 className="number"><span>{hiddenCode}</span></h3>
                 <div className="dateBank">
-                    <h3>Expires {this.props.expirationMonth}/{this.props.expirationYear}</h3>
-                    <h3>{this.props.bank}</h3>
+                    <h3><span>Expires {this.props.expirationMonth}/{this.props.expirationYear}</span></h3>
+                    <h3><span>{this.props.bank}</span></h3>
                 </div>
-                <h3>{this.props.owner}</h3>
+                <h3 className="owner"><span>{this.props.owner}</span></h3>
             </div>
         );
     }
