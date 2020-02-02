@@ -3,6 +3,8 @@ import './index.css';
 import IdCard from "./IdCard";
 import Greetings from "./Greetings";
 import Random from "./Random";
+import BoxColor from "./BoxColor";
+import CreditCard from "./CreditCard";
 
 class App extends Component {
   state = {
@@ -34,10 +36,10 @@ class App extends Component {
       max: 100
     } 
   }
- 
-  render() {
- 
+  
 
+  render(){
+ 
     return (
       <div className="App">
         <h1>IdCard</h1>
@@ -66,11 +68,50 @@ class App extends Component {
         <Greetings lang="fr">François</Greetings>
 
         <h1>Random</h1>
-        <Random min={this.state.randomA.min} max={this.state.randomA.max} />
-        <Random min={this.state.randomB.min} max={this.state.randomB.max} />
+        <Random min={this.state.randomA.min} max={this.state.randomA.max} aleatoire={this.aleatoire} /> 
+        <Random min={this.state.randomB.min} max={this.state.randomB.max} aleatoire={this.aleatoire}/>
+
+        <h1>BoxColor</h1>
+        <BoxColor r={255} g={0} b={0} hex="ff0000"/>
+        <BoxColor r={128} g={255} b={0} hex="80ff00"/>
+
+        <h1>CreditCard</h1>
+        <CreditCard 
+          type="Visa"
+          number="0123456789018845"
+          expirationMonth={3}
+          expirationYear={2021}
+          bank="BNP"
+          owner="Maxence Bouret"
+          bgColor="#11aa99"
+          color="white" />
+
+        {/* <CreditCard 
+          type="Master Card"
+          number="0123456789010995"
+          expirationMonth={3}
+          expirationYear={2021}
+          bank="N26"
+          owner="Maxence Bouret"
+          bgColor="#eeeeee"
+          color="#222222" />
+        <CreditCard 
+          type="Visa"
+          number="0123456789016984"
+          expirationMonth={12}
+          expirationYear={2019}
+          bank="Name of the Bank"
+          owner="Firstname Lastname"
+          bgColor="#ddbb55"
+          color="white" /> */}
+
+
       </div>
+
+
     );
   }
 }
 
 export default App;
+
