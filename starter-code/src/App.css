@@ -1,0 +1,48 @@
+img {
+    max-width:100%
+}
+
+.IdCard {
+    margin:10px;
+    border:1px solid;
+    border-color: black;
+    display:flex;
+}
+
+.IdCard-part {
+    padding:10px;
+}
+
+.CreditCard {
+    width:300px;
+    border-radius:10px;
+    padding:20px;
+    margin:10px;
+
+}
+
+.CreditCard div img {
+    width:15%;
+}
+
+.card-logo{
+    text-align: right;
+}
+
+.card-number{
+    font-size:1.5em;
+    margin-top:0.5em;
+    margin-bottom:0.5em;
+    display:flex;
+}
+
+.four-dots{
+    margin-right:10px;
+}
+.dot {
+    height: 0.5em;
+    width: 0.5em;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right:5px;
+  }
