@@ -18,7 +18,7 @@ class CreditCard extends Component {
            description = "logo-visa";
         }
         if (this.props.type === "Master Card") {
-            imgUrl = "https://lh3.googleusercontent.com/proxy/K4ZcInC_x2iNcHzi9qdd4PySFJ2JfvzifhjVIo8xwz1f7SCL2_EKtkFnzvuXTU0Jm5KI_7hgGJAaSdxaX9QAyPJBtwN2qHD2t888mXweJC4XcNlroDfroYsF1eeiSD_br3xZ";
+            imgUrl = "https://www.reussir-mon-ecommerce.fr/wp-content/uploads/2016/03/MasterCard-Logo-1-1024x768.png";
             description = "logo-masterCard";
         }
 
@@ -42,8 +42,8 @@ class CreditCard extends Component {
             }
         }
 
-        let newCode = code1 + " " + code2 + " " + code3 + " " + code4;
-        let hiddenCode = "...." + " " + "...." + " " + "...." + " " + code4;
+        // let newCode = code1 + " " + code2 + " " + code3 + " " + code4;
+        let hiddenCode = "●●●●" + " " + "●●●●" + " " + "●●●●" + " " + code4;
 
 
         return (
