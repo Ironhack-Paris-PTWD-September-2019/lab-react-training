@@ -6,6 +6,7 @@ import Random from "./Random";
 import BoxColor from "./BoxColor";
 import CreditCard from "./CreditCard";
 import Rating from "./Rating";
+import moment from 'moment';
 
 class App extends Component {
   state = {
@@ -50,7 +51,7 @@ class App extends Component {
           lastName={this.state.userA.lastName}
           gender={this.state.userA.gender}
           height={this.state.userA.height}
-          birth={this.state.userA.birth}
+          birth={moment(this.state.userA.birth).format('ddd MMM do YYYY')}
           picture={this.state.userA.picture}
         />
 
@@ -59,7 +60,7 @@ class App extends Component {
           lastName={this.state.userB.lastName}
           gender={this.state.userB.gender}
           height={this.state.userB.height}
-          birth={this.state.userB.birth}
+          birth={moment(this.state.userB.birth).format('ddd MMM do YYYY')}
           picture={this.state.userB.picture}
         />
 

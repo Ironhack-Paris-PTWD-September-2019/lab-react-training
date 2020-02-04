@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import './index.css';
+import moment from 'moment';
 
 class IdCard extends Component {
 
     render(){
 
         let taille = this.props.height/100 + "m";
-        // let anniv = new Date(this.props.birth);
         
         return (
             <div className="IdCard">
@@ -18,9 +18,7 @@ class IdCard extends Component {
                     <h3 className="lastName">Last name: <span>{this.props.lastName}</span></h3>
                     <h3 className="gender">Gender: <span>{this.props.gender}</span></h3>
                     <h3 className="height">Height: <span>{taille}</span></h3>
-
-                    <label >Birth: </label>
-                    <input type="date" value={this.props.birth} default ></input>
+                    <h3 className="birth">Birth: <span>{this.props.birth}</span></h3>
                 </div> 
             </div>
         );
