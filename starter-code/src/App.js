@@ -1,14 +1,51 @@
 import React, { Component } from 'react';
+import IdCard from "./IdCard";
+import Greetings from "./Greetings"
+import Random from "./Random"
+import BoxColor from "./BoxColor"
 
 class App extends Component {
+  state = {
+    userA: {
+      lastName:'Doe',
+      firstName:'John',
+      gender:'male',
+      height:178,
+      birth:"1992-07-14",
+      avatar:"https://randomuser.me/api/portraits/men/44.jpg"
+    },
+    userB: {
+      lastName:'Delores ',
+      firstName:'Obrien',
+      gender:'female',
+      height:172,
+      birth:"1988-05-11",
+      avatar:"https://randomuser.me/api/portraits/women/44.jpg"
+    
+    }
+
+  }
+
   render() {
     return (
       <div className="App">
         <h1>IdCard</h1>
-        {/* TODO: Use the IdCard component */}
+       <IdCard avatar={this.state.userA.avatar} firstName={this.state.userA.firstName} lastName={this.state.userA.lastName} gender={this.state.userA.gender} height= {this.state.userA.height} birth= {this.state.userA.birth}/>
+       <IdCard avatar={this.state.userB.avatar} firstName={this.state.userB.firstName} lastName={this.state.userB.lastName} gender={this.state.userB.gender} height= {this.state.userA.height} birth= {this.state.userB.birth}/>
+       
 
         <h1>Greetings</h1>
-        {/* TODO: Use the Greetings component */}
+        <Greetings lang="de">Ludwig</Greetings>
+        <Greetings lang="fr">François</Greetings>
+
+        <h1>Random</h1>
+        <Random min="1" max="6"/>
+        <Random min="1" max="100"/>
+
+        <h1>Box Color</h1>
+        <BoxColor r="255" g="0" b="0"/>
+        <BoxColor r="128" g="255" b="0"/>
+      
       </div>
     );
   }
