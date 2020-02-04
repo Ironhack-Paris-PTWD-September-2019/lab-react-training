@@ -31,8 +31,8 @@ class App extends Component {
         <Greetings lang="fr">François</Greetings>
 
         <h1>Random numbers</h1>
-        <Random endNumber={125}/>
-        <Random endNumber={1500}/>
+        <Random minNumber={1} maxNumber={125}/>
+        <Random minNumber={1000} maxNumber={1500}/>
       </div>
     );
   }
