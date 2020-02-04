@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import IdCard from './IdCard.js'
 import Greetings from './Greetings.js'
+import Random from './Random.js'
 
 class App extends Component {
   render() {
@@ -28,6 +29,10 @@ class App extends Component {
         <h1>Greetings</h1>
         <Greetings lang="de">Ludwig</Greetings>
         <Greetings lang="fr">François</Greetings>
+
+        <h1>Random numbers</h1>
+        <Random endNumber={125}/>
+        <Random endNumber={1500}/>
       </div>
     );
   }
