@@ -1,0 +1,38 @@
+.ID {
+    margin: 10px;
+    border: 2px black solid;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.info {
+    padding-left: 20px;
+}
+
+.row {
+    display: flex;
+}
+
+.bankcard {
+    max-width: 20%;
+    margin: 10px;
+    border: 2px white solid;
+    padding: 20px;
+    display: inline-flex;
+    flex-direction: column;
+    border-radius: 15%;
+}
+
+.right {
+    text-align: end;
+}
+
+.logo {
+    max-width: 20%;
+}
+
+.center {
+    font-size: 2em;
+    font-weight: bolder;
+}
