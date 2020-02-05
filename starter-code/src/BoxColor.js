@@ -23,7 +23,7 @@ class BoxColor extends Component {
             };
         return (
             
-            <div style={divStyle}>test</div>
+            <div style={divStyle}></div>
         );
     }
 }
