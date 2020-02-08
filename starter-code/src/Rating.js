@@ -1,39 +1,31 @@
-import React, { Component } from "react";
+import React from "react";
 import "./index.css";
+import vide from "./star_border-24px.svg";
+import full from "./star-24px.svg";
 
 
-class Rating extends Component {
+class Rating extends React.Component {
 
     render() {
-        let numberStar = Math.round(this.props.children);
-        console.log(numberStar);
-        let imgStar = "";
-        if (numberStar === 0) {
-           imgStar = "../public/img/star/zero.PNG"; 
-        }
-        if (numberStar === 1) {
-           imgStar = "../public/img/star/one-star.PNG"; 
-        }
-        if (numberStar === 2) {
-           imgStar = "../public/img/star/two-stars.PNG"; 
-        }
-        if (numberStar === 3) {
-           imgStar = "../public/img/star/three-stars.PNG"; 
-        }
-        if (numberStar === 4) {
-           imgStar = "../public/img/star/four-stars.PNG"; 
-        }
-        if (numberStar === 5) {
-           imgStar = "../public/img/star/five-stars.PNG"; 
-        }
-        return (
-            <div className="Rating">
-                <div className="star">
-                    <img src={imgStar} alt="star-logo" />
-                </div>
-            </div>
-        );
-    }
+
+      let numberStar = Math.round(this.props.children);
+      console.log(numberStar);
+
+      return (
+         <div>
+            {[1,2,3,4,5].map((el, i) => { 
+               if (i < numberStar) { 
+                  return <img src={full} alt="" /> 
+               } else { 
+                  return <img src={vide} alt="" /> 
+               }
+
+            }
+            )}
+         </div>
+      );
+   }    
 }
 
 export default Rating;
+
