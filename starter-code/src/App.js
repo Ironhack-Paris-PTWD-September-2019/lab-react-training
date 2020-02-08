@@ -4,6 +4,8 @@ import Greetings from "./Greetings"
 import Random from "./Random"
 import BoxColor from "./BoxColor"
 import moment from "moment";
+import Rating from "./Rating"
+import DriverCard from "./DriverCard"
 
 class App extends Component {
   state = {
@@ -46,6 +48,9 @@ class App extends Component {
         <h1>Box Color</h1>
         <BoxColor r={255} g={0} b={0}/>
         <BoxColor r={128} g={255} b={0}/>
+
+        <Rating>0</Rating>
+        <Rating>1</Rating>
       
       </div>
     );

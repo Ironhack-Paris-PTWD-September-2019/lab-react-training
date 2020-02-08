@@ -14,5 +14,6 @@
         "statusBarItem.hoverBackground": "#8a2ca2",
         "statusBar.foreground": "#e7e7e7"
     },
-    "peacock.remoteColor": "#68217a"
+    "peacock.remoteColor": "#68217a",
+    "peacock.color": "#68217a"
 }
