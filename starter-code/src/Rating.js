@@ -6,11 +6,11 @@ const starEmpty="https://fonts.gstatic.com/s/i/materialicons/star_border/v4/24px
 const Rating = (props) => {
     return(
         <div>
-        {props.children <1 ? <img src={starEmpty} alt=""/> : <img src={starFull} alt=""/>}
-        {props.children <2 ? <img src={starEmpty} alt=""/> : <img src={starFull} alt=""/>}
-        {props.children <3 ? <img src={starEmpty} alt=""/> : <img src={starFull} alt=""/>}
-        {props.children <4 ? <img src={starEmpty} alt=""/> : <img src={starFull} alt=""/>}
-        {props.children <5 ? <img src={starEmpty} alt=""/> : <img src={starFull} alt=""/>}
+        {props.children <0.7 ? <img src={starEmpty} alt=""/> : <img src={starFull} alt=""/>}
+        {props.children <1.7 ? <img src={starEmpty} alt=""/> : <img src={starFull} alt=""/>}
+        {props.children <2.7 ? <img src={starEmpty} alt=""/> : <img src={starFull} alt=""/>}
+        {props.children <3.7 ? <img src={starEmpty} alt=""/> : <img src={starFull} alt=""/>}
+        {props.children <4.7 ? <img src={starEmpty} alt=""/> : <img src={starFull} alt=""/>}
      </div>
     )
 

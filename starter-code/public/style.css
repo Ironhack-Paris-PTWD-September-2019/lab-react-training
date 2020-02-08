@@ -6,6 +6,17 @@
     align-items: center;
 }
 
+.ID2 {
+    margin: 10px 100px;
+    border: 2px black solid;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(53, 56, 206);
+    color: white;
+}
+
 .info {
     padding-left: 20px;
 }
@@ -35,4 +46,10 @@
 .center {
     font-size: 2em;
     font-weight: bolder;
+}
+
+.imgID {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
 }
