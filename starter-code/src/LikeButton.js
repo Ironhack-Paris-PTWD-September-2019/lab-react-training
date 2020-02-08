@@ -14,7 +14,7 @@ class LikeButton extends React.Component {
         const color=['purple','blue','green','yellow','orange','red']
         var colorIndex=this.state.nbOfLikes % color.length
         return(
-            <button onClick={this.increaseLike} style={{backgroundColor:color[colorIndex]}}>
+            <button className="LikeButton" onClick={this.increaseLike} style={{backgroundColor:color[colorIndex]}}>
                 {this.state.nbOfLikes} Likes
             </button>
         )

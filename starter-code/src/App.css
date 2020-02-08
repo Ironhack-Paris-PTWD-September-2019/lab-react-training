@@ -47,6 +47,10 @@ img {
     margin-right:5px;
   }
 
+  .LikeButton {
+    font-size:40px;
+  }
+
 .DriverCard {
     display:flex;
     border: 1px solid;
@@ -75,4 +79,17 @@ img {
     object-fit: cover; /*évtier déformer*/
     border-radius:100%;
     float:right
+}
+
+.Dice{
+    width:100px;
+}
+
+.Carousel {
+    font-size:40px;
+    user-select: none;
+}
+
+.Carousel img {
+    width:200px
 }

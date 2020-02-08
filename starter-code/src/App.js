@@ -6,9 +6,11 @@ import Random from './Random.js';
 import BoxColor from './BoxColor.js';
 import CreditCard from './CreditCard.js';
 import Rating from './Rating.js';
-import DriverCard from './DriverCard.js'
-import LikeButton from './LikeButton.js'
-import ClickablePicture from './ClickablePicture.js'
+import DriverCard from './DriverCard.js';
+import LikeButton from './LikeButton.js';
+import ClickablePicture from './ClickablePicture.js';
+import Dice from './Dice.js';
+import Carousel from './Carousel.js'
 import "./App.css"
 
 class App extends Component {
@@ -91,7 +93,7 @@ class App extends Component {
             }} />
             <DriverCard 
               name="Dara Khosrowshahi"
-              rating={4.9}
+              rating={1}
               img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
               car={{
                 model: "Audi A3",
@@ -102,6 +104,13 @@ class App extends Component {
             <ClickablePicture
                 img="/img/persons/maxence.png"
                 imgClicked="/img/persons/maxence-glasses.png" />
+            
+            <Dice></Dice>
+
+            <h2>Carousel</h2>
+
+            <Carousel
+              imgs={["https://randomuser.me/api/portraits/women/1.jpg", "https://randomuser.me/api/portraits/men/1.jpg","https://randomuser.me/api/portraits/women/2.jpg", "https://randomuser.me/api/portraits/men/2.jpg"]} />
       </div>
     );
   }
