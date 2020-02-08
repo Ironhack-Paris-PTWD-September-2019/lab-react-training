@@ -1,5 +1,6 @@
 import React from "react";
 
+
 class IdCard extends React.Component {
     render(){
         return(
@@ -10,11 +11,11 @@ class IdCard extends React.Component {
                 </div>
 
                 <div className="IdCard-part">
-                    <div>last name:{this.props.lastName}</div>
-                    <div>first name:{this.props.firstName}</div>
-                    <div>gender:{this.props.gender}</div>
-                    <div>height:{this.props.height}</div>
-                    <div>birth:{this.props.birth}</div>
+                    <div><strong>Last name:</strong> {this.props.lastName}</div>
+                    <div><strong>First name:</strong> {this.props.firstName}</div>
+                    <div><strong>Gender:</strong> {this.props.gender}</div>
+                    <div><strong>Height: </strong> {this.props.height}</div>
+                    <div><strong>Birth: </strong>{this.props.birth}</div>
                 </div> 
 
             </div>

@@ -1,20 +1,18 @@
 import React, { Component } from 'react';
+import moment from 'moment';
 import IdCard from './IdCard.js';
 import Greetings from './Greetings.js';
 import Random from './Random.js';
 import BoxColor from './BoxColor.js';
-import CreditCard from './CreditCard.js'
+import CreditCard from './CreditCard.js';
+import Rating from './Rating.js';
+import DriverCard from './DriverCard.js'
+import LikeButton from './LikeButton.js'
+import ClickablePicture from './ClickablePicture.js'
 import "./App.css"
 
 class App extends Component {
-  state = {
-    userA: {
-      birth: new Date("1992-07-14")
-    },
-    userB: {
-      birth: new Date("1988-05-11")
-    }
-  };
+
   render() {
     return (
       <div className="App">
@@ -25,7 +23,7 @@ class App extends Component {
           firstName='John'
           gender='male'
           height={178}
-          birth={this.state.userA.birth.toLocaleDateString()}
+          birth={moment(new Date("1992-07-14")).format("dddd MMM Do YYYY")}
           picture="https://randomuser.me/api/portraits/men/44.jpg"
           alt="Doe picture"
         />
@@ -35,7 +33,7 @@ class App extends Component {
           firstName='Obrien'
           gender='female'
           height={172}
-          birth={this.state.userB.birth.toLocaleDateString()}
+          birth={moment(new Date("1988-05-11")).format("dddd MMM Do YYYY")}
           picture="https://randomuser.me/api/portraits/women/44.jpg"
           alt="Delores picture"
         />
@@ -78,6 +76,32 @@ class App extends Component {
           owner="Firstname Lastname"
           bgColor="#ddbb55"
           color="white" />
+
+          <Rating>4.6</Rating>
+
+          <h2>Driver Card</h2>
+
+          <DriverCard 
+            name="Travis Kalanick"
+            rating={4.2}
+            img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
+            car={{
+              model: "Toyota Corolla Altis",
+              licensePlate: "CO42DE"
+            }} />
+            <DriverCard 
+              name="Dara Khosrowshahi"
+              rating={4.9}
+              img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
+              car={{
+                model: "Audi A3",
+                licensePlate: "BE33ER"
+            }} />
+
+            <LikeButton/>
+            <ClickablePicture
+                img="/img/persons/maxence.png"
+                imgClicked="/img/persons/maxence-glasses.png" />
       </div>
     );
   }
