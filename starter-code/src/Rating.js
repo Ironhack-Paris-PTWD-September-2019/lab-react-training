@@ -19,7 +19,6 @@ class Rating extends React.Component {
                } else { 
                   return <img src={vide} alt="" /> 
                }
-
             }
             )}
          </div>
