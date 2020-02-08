@@ -4,6 +4,7 @@ import Greetings from './Greetings.js'
 import Random from './Random.js'
 import BoxColor from './BoxColor.js'
 import CreditCard from './CreditCard.js'
+import Rating from './Rating.js'
 
 
 class App extends Component {
@@ -69,6 +70,15 @@ class App extends Component {
           owner="Firstname Lastname"
           bgColor="#ddbb55"
           color="white" />
+
+          <h1>Rating</h1>
+
+          <Rating>3</Rating>
+          <Rating>1.49</Rating>
+          <Rating>1.5</Rating>
+          <Rating>0</Rating>
+          <Rating>4</Rating>
+          <Rating>5</Rating>
 
       </div>
     );
