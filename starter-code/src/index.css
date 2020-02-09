@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 0.5em;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -12,3 +12,297 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/*
+#### ########      ######     ###    ########  ########  
+ ##  ##     ##    ##    ##   ## ##   ##     ## ##     ## 
+ ##  ##     ##    ##        ##   ##  ##     ## ##     ## 
+ ##  ##     ##    ##       ##     ## ########  ##     ## 
+ ##  ##     ##    ##       ######### ##   ##   ##     ## 
+ ##  ##     ##    ##    ## ##     ## ##    ##  ##     ## 
+#### ########      ######  ##     ## ##     ## ########  
+*/
+
+.IdCard {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid;
+  margin: 0.5em 0em;
+} 
+
+.infoId {
+  margin-top: 0.3em;
+}
+
+.infoId h3 {
+  font-size: 1em;
+  margin: 0px;
+} 
+
+.infoId span {
+  font-weight : lighter;
+
+}
+
+.imgId img {
+  display: block;
+  margin: 0.3em 0.3em;
+}
+
+.infoId label {
+  font-weight: bolder;
+}
+
+.infoId input {
+  border: none;
+  font-size: 1em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+/*
+######   ########  ######## ######## ######## #### ##    ##  ######    ######  
+##    ##  ##     ## ##       ##          ##     ##  ###   ## ##    ##  ##    ## 
+##        ##     ## ##       ##          ##     ##  ####  ## ##        ##       
+##   #### ########  ######   ######      ##     ##  ## ## ## ##   ####  ######  
+##    ##  ##   ##   ##       ##          ##     ##  ##  #### ##    ##        ## 
+##    ##  ##    ##  ##       ##          ##     ##  ##   ### ##    ##  ##    ## 
+ ######   ##     ## ######## ########    ##    #### ##    ##  ######    ###### 
+*/
+
+.greetingBox h3 {
+  display: block;
+  font-size: 1em;
+  padding: 0.3em 0.3em;
+  margin: 0px;
+}
+
+.greetingBox {
+  border: 1px solid;
+  margin: 0.5em 0em;
+  
+}
+
+.message span {
+  font-weight : lighter;
+
+}
+
+
+/*
+########     ###    ##    ## ########   #######  ##     ## 
+##     ##   ## ##   ###   ## ##     ## ##     ## ###   ### 
+##     ##  ##   ##  ####  ## ##     ## ##     ## #### #### 
+########  ##     ## ## ## ## ##     ## ##     ## ## ### ## 
+##   ##   ######### ##  #### ##     ## ##     ## ##     ## 
+##    ##  ##     ## ##   ### ##     ## ##     ## ##     ## 
+##     ## ##     ## ##    ## ########   #######  ##     ## 
+*/
+
+.Random h3 {
+  display: block;
+  font-size: 1em;
+  padding: 0.3em 0.3em;
+  margin: 0px;
+}
+
+.Random {
+  border: 1px solid;
+  margin: 0.5em 0em;
+  
+}
+
+.randomBox span {
+  font-weight : lighter;
+
+}
+
+/*
+########   #######  ##     ##  ######   #######  ##        #######  ########  
+##     ## ##     ##  ##   ##  ##    ## ##     ## ##       ##     ## ##     ## 
+##     ## ##     ##   ## ##   ##       ##     ## ##       ##     ## ##     ## 
+########  ##     ##    ###    ##       ##     ## ##       ##     ## ########  
+##     ## ##     ##   ## ##   ##       ##     ## ##       ##     ## ##   ##   
+##     ## ##     ##  ##   ##  ##    ## ##     ## ##       ##     ## ##    ##  
+########   #######  ##     ##  ######   #######  ########  #######  ##     ## 
+*/
+
+
+.BoxColor {
+  border: 1px solid;
+  margin: 0.5em 0em;
+}
+
+.BoxColor h3 {
+  text-align: center;
+  font-size: 1em;
+}
+
+#rgbBox {
+  margin-bottom: 0em;
+}
+
+#hexBox {
+  margin-top: 0em;
+}
+
+.BoxColor span {
+  font-weight : lighter;
+}
+
+/*
+######  ########  ######## ########  #### ########  ######     ###    ########  ########  
+##    ## ##     ## ##       ##     ##  ##     ##    ##    ##   ## ##   ##     ## ##     ## 
+##       ##     ## ##       ##     ##  ##     ##    ##        ##   ##  ##     ## ##     ## 
+##       ########  ######   ##     ##  ##     ##    ##       ##     ## ########  ##     ## 
+##       ##   ##   ##       ##     ##  ##     ##    ##       ######### ##   ##   ##     ## 
+##    ## ##    ##  ##       ##     ##  ##     ##    ##    ## ##     ## ##    ##  ##     ## 
+ ######  ##     ## ######## ########  ####    ##     ######  ##     ## ##     ## ########  
+*/
+
+
+.creditCardBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0.5em 0em; 
+} 
+
+
+.CreditCard {
+  border-radius: 7px;
+  margin: 0em 0.5em;
+  padding: 0.8em 0.8em;
+  width: 20%; 
+  
+}
+
+.logo img{
+  display: block;
+  margin-left: auto;
+  margin-right: 0.8em;
+  margin-top: 0.8em;
+  width: 4em;
+}
+
+.number {
+  text-align: center;
+  font-size: 1.8em;
+}
+
+.number span {
+  font-weight : lighter;
+}
+
+.dateBank {
+  display: flex;
+  
+}
+
+.dateBank h3{
+  /* padding-left: 0.5em; */
+  margin: 0em 0.5em;
+  font-size: 1em;
+  
+}
+
+.dateBank span {
+  font-weight : lighter;
+  
+}
+
+.owner {
+  margin: 0em 0.5em;
+  font-size: 1em;
+}
+
+.owner span {
+  font-weight : lighter;
+  
+}
+
+
+/*
+########     ###    ######## #### ##    ##  ######   
+##     ##   ## ##      ##     ##  ###   ## ##    ##  
+##     ##  ##   ##     ##     ##  ####  ## ##        
+########  ##     ##    ##     ##  ## ## ## ##   #### 
+##   ##   #########    ##     ##  ##  #### ##    ##  
+##    ##  ##     ##    ##     ##  ##   ### ##    ##  
+##     ## ##     ##    ##    #### ##    ##  ######    
+*/
+
+.rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+
+/*
+########  ########  #### ##     ## ######## ########   ######     ###    ########  ########  
+##     ## ##     ##  ##  ##     ## ##       ##     ## ##    ##   ## ##   ##     ## ##     ## 
+##     ## ##     ##  ##  ##     ## ##       ##     ## ##        ##   ##  ##     ## ##     ## 
+##     ## ########   ##  ##     ## ######   ########  ##       ##     ## ########  ##     ## 
+##     ## ##   ##    ##   ##   ##  ##       ##   ##   ##       ######### ##   ##   ##     ## 
+##     ## ##    ##   ##    ## ##   ##       ##    ##  ##    ## ##     ## ##    ##  ##     ## 
+########  ##     ## ####    ###    ######## ##     ##  ######  ##     ## ##     ## ########    
+*/
+
+.DriverCard {
+  display: flex;
+  margin: 0.5em 0em; 
+  border-radius: 15px;
+  background-color:#455EB5;
+
+
+}
+
+.imgDriverCard {
+  width: 40%;
+}
+
+.imgDriverCard img{
+  display: block;
+  /* height: 8em; */
+  /* border-radius: 100px; */
+  margin-top: 1.5em;  
+  margin-bottom: 1.5em; 
+  margin-left: auto;
+  overflow:hidden;
+  -webkit-border-radius:50px;
+  -moz-border-radius:50px;
+  border-radius:50px;
+  width:100px;
+  height:100px;
+  
+}
+
+.infoDriverCard {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  width: 60%;
+  margin-left: 3em;
+}
+
+.infoDriverCard span {
+  font-weight : lighter;
+  
+}
+
+.infoDriverCard h1 {
+  margin-bottom: 0;
+  
+}
+
+.infoDriverCard h2 {
+  margin-top: 0;
+  
+}
+
+
+
+
+
+
+
