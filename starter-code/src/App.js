@@ -10,7 +10,9 @@ import DriverCard from './DriverCard.js';
 import LikeButton from './LikeButton.js';
 import ClickablePicture from './ClickablePicture.js';
 import Dice from './Dice.js';
-import Carousel from './Carousel.js'
+import Carousel from './Carousel.js';
+import NumbersTable from './NumbersTable.js';
+import Facebook from './Facebook.js'
 import "./App.css"
 
 class App extends Component {
@@ -111,6 +113,12 @@ class App extends Component {
 
             <Carousel
               imgs={["https://randomuser.me/api/portraits/women/1.jpg", "https://randomuser.me/api/portraits/men/1.jpg","https://randomuser.me/api/portraits/women/2.jpg", "https://randomuser.me/api/portraits/men/2.jpg"]} />
+            
+            <h2>Numbers Table</h2>
+            <NumbersTable limit={40}/>
+
+            <h2>Facebook</h2>
+            <Facebook/>
       </div>
     );
   }
