@@ -12,7 +12,7 @@ class Rating extends React.Component {
       console.log(numberStar);
 
       return (
-         <div>
+         <div className="rating">
             {[1,2,3,4,5].map((el, i) => { 
                if (i < numberStar) { 
                   return <img src={full} alt="" /> 

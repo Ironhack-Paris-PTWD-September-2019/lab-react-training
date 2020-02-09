@@ -220,6 +220,7 @@ code {
   
 }
 
+
 /*
 ########     ###    ######## #### ##    ##  ######   
 ##     ##   ## ##      ##     ##  ###   ## ##    ##  
@@ -227,6 +228,81 @@ code {
 ########  ##     ##    ##     ##  ## ## ## ##   #### 
 ##   ##   #########    ##     ##  ##  #### ##    ##  
 ##    ##  ##     ##    ##     ##  ##   ### ##    ##  
-##     ## ##     ##    ##    #### ##    ##  ######   
+##     ## ##     ##    ##    #### ##    ##  ######    
 */
+
+.rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+
+/*
+########  ########  #### ##     ## ######## ########   ######     ###    ########  ########  
+##     ## ##     ##  ##  ##     ## ##       ##     ## ##    ##   ## ##   ##     ## ##     ## 
+##     ## ##     ##  ##  ##     ## ##       ##     ## ##        ##   ##  ##     ## ##     ## 
+##     ## ########   ##  ##     ## ######   ########  ##       ##     ## ########  ##     ## 
+##     ## ##   ##    ##   ##   ##  ##       ##   ##   ##       ######### ##   ##   ##     ## 
+##     ## ##    ##   ##    ## ##   ##       ##    ##  ##    ## ##     ## ##    ##  ##     ## 
+########  ##     ## ####    ###    ######## ##     ##  ######  ##     ## ##     ## ########    
+*/
+
+.DriverCard {
+  display: flex;
+  margin: 0.5em 0em; 
+  border-radius: 15px;
+  background-color:#455EB5;
+
+
+}
+
+.imgDriverCard {
+  width: 40%;
+}
+
+.imgDriverCard img{
+  display: block;
+  /* height: 8em; */
+  /* border-radius: 100px; */
+  margin-top: 1.5em;  
+  margin-bottom: 1.5em; 
+  margin-left: auto;
+  overflow:hidden;
+  -webkit-border-radius:50px;
+  -moz-border-radius:50px;
+  border-radius:50px;
+  width:100px;
+  height:100px;
+  
+}
+
+.infoDriverCard {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  width: 60%;
+  margin-left: 3em;
+}
+
+.infoDriverCard span {
+  font-weight : lighter;
+  
+}
+
+.infoDriverCard h1 {
+  margin-bottom: 0;
+  
+}
+
+.infoDriverCard h2 {
+  margin-top: 0;
+  
+}
+
+
+
+
+
+
 

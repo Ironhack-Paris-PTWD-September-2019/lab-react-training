@@ -7,7 +7,8 @@ import BoxColor from "./BoxColor";
 import CreditCard from "./CreditCard";
 import Rating from "./Rating";
 import moment from 'moment';
-import CreditCard from "./DriverCard";
+import DriverCard from "./DriverCard";
+
 
 class App extends Component {
   state = {
@@ -119,7 +120,7 @@ class App extends Component {
         <Rating>4</Rating>
         <Rating>5</Rating>
 
-
+        <h1>DriverCard</h1>
         <DriverCard 
           name="Travis Kalanick"
           rating={4.2}
