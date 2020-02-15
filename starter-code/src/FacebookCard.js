@@ -4,9 +4,9 @@ const FacebookCard =(props) => {
 
     var type = "teacher"
     if (props.isStudent===true) {type="student"}
-    console.log('props.clickToChangeBackground',props.clickToChangeBackground)
+ 
     return(
-        <div className="IdCard" style={{backgroundColor:props.clickToChangeBackground}}>
+        <div className="IdCard" style={{backgroundColor:props.blue}}>
 
             <div className="IdCard-part-one">
                 <img src={props.img} alt={props.alt}/>
