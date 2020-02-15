@@ -1,0 +1,7 @@
+.rating {
+    display: flex;
+}
+
+.rating img {
+    width: 20px;
+}

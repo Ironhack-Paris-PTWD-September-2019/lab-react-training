@@ -1,0 +1,8 @@
+.carousel {
+    display: flex;
+}
+
+button {
+    width: 60px;
+    height: 30px;
+}

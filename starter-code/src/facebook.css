@@ -1,0 +1,7 @@
+.faceApp{
+    display: flex;
+}
+
+.facePicture img{
+    width: 150px;
+}

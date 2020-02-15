@@ -1,0 +1,8 @@
+.greetings {
+    border: 1px solid;
+    margin-bottom: 10px;
+}
+.greetings p {
+    line-height: 0;
+    padding-left: 5px;
+}

@@ -1,0 +1,16 @@
+.card {
+    display: flex;
+    line-height: 0;
+    margin: 10px 0px;
+    border: 1px solid ;
+    padding: 5px;
+}
+
+.text {
+    margin: 0;
+}
+
+.text p {
+    margin-top: 8px;
+    margin-left: 5px;
+}
