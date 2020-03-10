@@ -1,0 +1,121 @@
+img {
+    max-width:100%
+}
+
+.IdCard {
+    margin:10px;
+    border:1px solid;
+    border-color: black;
+    display:flex;
+    width:800px;
+    font-size:20px;
+}
+
+.IdCard-part-one {
+    padding:10px;
+    width:180px;
+}
+
+.IdCard-part-one img{
+    width:180px;
+    height:180px;
+    object-fit: cover;
+}
+
+.CreditCard {
+    width:300px;
+    border-radius:10px;
+    padding:20px;
+    margin:10px;
+
+}
+
+.CreditCard div img {
+    width:15%;
+}
+
+.card-logo{
+    text-align: right;
+}
+
+.card-number{
+    font-size:1.5em;
+    margin-top:0.5em;
+    margin-bottom:0.5em;
+    display:flex;
+}
+
+.four-dots{
+    margin-right:10px;
+}
+.dot {
+    height: 0.5em;
+    width: 0.5em;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right:5px;
+  }
+
+  .LikeButton {
+    font-size:40px;
+  }
+
+.DriverCard {
+    display:flex;
+    border: 1px solid;
+    border-color:rgb(72,95,175);
+    background-color:rgb(72,95,175);
+    border-radius:10px;
+    width:800px;
+    height:200px;
+    margin:auto;
+    color:white;
+    justify-content: center;
+    align-items: center;
+    font-size:20px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.DriverCardPart{
+    width:50%;
+    padding:10px;
+}
+
+.DriverCardPart img{
+    width:140px;
+    height:140px;
+    object-fit: cover; /*évtier déformer*/
+    border-radius:100%;
+    float:right
+}
+
+.Dice{
+    width:100px;
+}
+
+.Carousel {
+    font-size:40px;
+    user-select: none;
+}
+
+.Carousel img {
+    width:200px
+}
+
+.NumbersTable {
+    display:flex;
+    text-align: center;
+    width:240px;
+    flex-wrap:wrap;
+    margin:20px;
+}
+
+.NumbersSquare {
+    width:40px;
+    height:40px;
+    line-height: 40px;
+    border: 1px solid;
+    border-color: black;
+   
+}
