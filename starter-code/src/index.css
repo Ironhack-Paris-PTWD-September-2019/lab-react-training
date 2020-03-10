@@ -12,3 +12,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.idCard {
+
+border: solid 1px;
+display : flex;
+align-items: center;
+padding:10px;
+
+}
+
+.details {
+  margin-left: 20px;
+  line-height: 1;
+}
+
+.details p {
+  margin:0.5px;
+}
+
+.avatar {
+  height: 100%;
+}
